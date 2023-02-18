@@ -1,0 +1,267 @@
+@font-face {
+  font-family: Hanken Grotesk;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 80vh;
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(221, 100%, 96%);
+}
+
+/* ======================== Star Main Area ================ */
+
+.site {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+/* ======================== Start Result Section Area ================ */
+
+.result {
+  background-color: hsl(241, 81%, 54%);
+  border-radius: 20px;
+  padding: 20px;
+  width: 350px;
+  margin-right: -10px;
+  z-index: 1;
+}
+
+.result-para {
+  font-size: 1.125rem;
+  color:hsl(241, 100%, 89%);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.score {
+  background-color: hsla(256, 72%, 46%, 1);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.score-h1 {
+  font-weight: 800;
+  font-size: 1.625rem;
+  line-height: 30px;
+  font-style: normal;
+  color: hsl(0, 0%, 100%);
+}
+
+.score-para {
+  font-size: 1.125rem;
+  color: hsl(241, 100%, 89%);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.result-h2 {
+  font-weight: 800;
+  font-size: 1.625rem;
+  line-height: 30px;
+  font-style: normal;
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+}
+
+.main-para {
+  font-size: 1.125rem;
+  color: hsl(0, 0%, 100%);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  width: 250px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.main-para>br{
+    display: none;
+}
+
+/* ======================== End Result Section Area ================ */
+/* ======================== Start Summary Section Area ================ */
+.summary {
+  width: 350px;
+  padding: 20px 30px;
+  text-align: start;
+  background-color: white;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.summary-h2 {
+  font-weight: 800;
+  font-size: 1.625rem;
+  line-height: 30px;
+  font-style: normal;
+  color: hsl(224, 30%, 27%);
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.rec {
+  background-color: hsla(0, 100%, 67%, 0.15);
+}
+
+.rec > .info-h3 {
+  color: hsl(0, 100%, 67%);
+}
+
+.mem {
+  background-color: hsla(39, 100%, 56%, 0.15);
+}
+
+.mem > .info-h3 {
+  color: hsl(39, 100%, 56%);
+}
+
+.ver {
+  background-color: hsla(166, 100%, 37%, 0.15);
+}
+
+.ver > .info-h3 {
+  color: hsl(166, 100%, 37%);
+}
+
+.vis {
+  background-color: hsla(234, 85%, 45%, 0.15);
+}
+
+.vis > .info-h3 {
+  color: hsl(234, 85%, 45%);
+}
+
+.info-h3 {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: -60px;
+}
+
+.info-para {
+  font-size: 1.125rem;
+  color: hsl(241, 100%, 89%);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.info-para > span {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.btn:hover{
+    background-color: hsl(241, 81%, 54%);
+}
+
+/* ======================== End Summary Section Area ================ */
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: hsl(39, 100%, 56%);
+  justify-content: center;
+  background-color: black;
+  padding: 5px;
+  margin-top: 70px;
+}
+
+.foot a {
+  color: hsl(166, 100%, 37%);
+  text-decoration: none;
+}
+
+/* ======================== End Footer Area ================ */
+/* ======================== Start Media Querry Area ================ */
+
+@media screen and (max-width: 690px) {
+    
+    body{
+        min-width: 420px;
+    }
+
+    .site{
+        margin-top: 0;
+        background-color: hsl(0, 0%, 100%);
+        
+    }
+
+    .summary{
+        width: 100%;
+        border-radius: 0px;
+        margin-top: 50px;
+    }
+
+    .result{
+        border-radius: 0px 0px 30px 30px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        z-index: 0;
+    }
+    
+    .main-para{
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .score{
+        margin-left: 40%;
+    }
+
+    .main-para>br{
+        display: block;
+    }
+
+    .info{
+        justify-content: space-between;
+        padding: 10px 40px;
+        margin-top: 20px;
+    }
+
+    
+}
+
+/* ======================== End Media Querry Area ================ */
